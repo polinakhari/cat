@@ -1,0 +1,110 @@
+.catalog-item {
+    min-width: 270px;    
+    background: #FFFFFF;
+    border: 1px solid #E1E1E1;
+    box-sizing: border-box;
+    box-shadow: 0px 0px 25px rgba(208, 208, 208, 0.25);
+    border-radius: 6px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 26px;
+    margin-left: 6px;
+    margin-right: -3px;
+
+}
+.catalog-item__title{
+    @include font-title(2rem, 2.2rem);    
+    padding-left: 22px;
+    margin-top: 18px;
+    text-align: left;
+    margin-bottom: 0;
+}
+.catalog-item__info{
+    @include font-desc();
+    text-align: left;
+    padding-left: 20px;
+}
+.catalog-item__info-item:nth-child(2){
+    margin-top: -5px;
+    margin-bottom: -10px;
+}
+.catalog-item__button{
+    background: #FF7236;    
+    border-radius: 25px;
+    @include font-desc(1.2rem,1.5rem);
+    margin: 20px;
+    margin-bottom: 30px;
+    padding: 14px 0px;
+    display: block;
+    text-align: center;
+    border: none;
+    color: #FFFEFD;
+    outline: none;
+    position: relative;
+    margin-bottom: 25px;
+
+    
+}
+.catalog-item:hover{
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);    
+    border: 1px solid #ffaa50;
+}
+.catalog-item__button:hover{
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);    
+}
+.catalog-item__button:active{
+    background: #F05B1B;
+    box-shadow: none;
+}
+.catalog-item__button:active > .catalog-item__button-elem
+{
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.catalog-item__price{
+    @include font-desc();
+    padding-left: 20px;
+}
+.catalog-item__price span{
+    @include font-desc(1.8rem,2.2rem);
+    font-weight: 500;    
+}
+.catalog-item__price .rub{
+    @include font-title(1.8rem,2.2rem);
+    font-weight: 400;
+}
+.catalog-item__img img{
+    border-radius: 6px 6px 0px 0px;
+    align-self: center;
+}
+.catalog-item__button-elem{
+    width: 34px;
+    height: 33.45px;
+    background: #FFFEFD;
+    //box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    position: absolute;
+    border-radius: 50%;
+    right: 5px;
+    top: 5px;
+}
+.catalog-item__button-elem::after{
+    content: " ";
+    position: absolute;
+    width: 19.83px;
+    height: 16.73px;
+    background: url(../img/foot.svg) no-repeat;
+    background-position: center;
+    left: 8px;
+    top: 8px;
+}
+.catalog-item__info-img{
+    padding: 0 4px;
+    position: relative;
+    top: 2px;
+    padding-left: 8px;
+}
+@media(max-width: 800px) {   
+    .catalog-item{
+        margin: 0px;   
+        margin-bottom: 20px;     
+    }
+}

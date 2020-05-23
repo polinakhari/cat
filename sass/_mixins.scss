@@ -1,0 +1,28 @@
+@mixin font-title($size:2rem, $height:2.4rem) {
+    font-family: $font-title;
+    color: $text-color;
+    font-size: $size;
+    font-weight: 600;
+    line-height: $height;
+    text-align: left;    
+  }
+  @mixin font-desc($size:1.4rem, $height:1.7rem) {
+    font-family: $font-desc;
+    color: $text-color;
+    font-size: $size;
+    font-weight: 400;
+    line-height: $height;
+    text-align: left;  
+  }
+  @mixin for-phone-only {
+    @media (max-width: 599px) { @content; }
+  }
+  @mixin for-tablet-portrait-up {
+    @media (min-width: 600px) { @content; }
+  }
+  @mixin for-tablet-landscape-up {
+    @media (min-width: 900px) { @content; }
+  }
+  @mixin for-desktop-up {
+    @media (min-width: 1200px) { @content; }
+  }

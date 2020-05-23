@@ -1,0 +1,346 @@
+:root {
+  font-size: 62.5%; }
+
+@font-face {
+  font-family: "Lato";
+  src: url("../fonts/Lato-Regular.woff"), url("../fonts/Lato-Regular.woff2");
+  font-style: normal;
+  font-weight: normal; }
+
+@font-face {
+  font-family: "Lato";
+  src: url("../fonts/Lato-Bold.woff"), url("../fonts/Lato-Bold.woff2");
+  font-style: bold;
+  font-weight: bold; }
+
+@font-face {
+  font-family: "Rubik";
+  src: url("../fonts/Rubik-Regular.woff"), url("../fonts/Rubik-Regular.woff2");
+  font-style: normal;
+  font-weight: normal; }
+
+@font-face {
+  font-family: "Lato";
+  src: url("../fonts/Rubik-Bold.woff"), url("../fonts/Rubik-Bold.woff2");
+  font-style: bold;
+  font-weight: bold; }
+
+body {
+  width: 100%; }
+
+.main-wrapper {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto; }
+
+.main-header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 12px;
+  background: #FFFEFD; }
+
+.main-title {
+  font-family: "Rubik";
+  color: #1A212F;
+  font-size: 3.6rem;
+  font-weight: 600;
+  line-height: 4.3rem;
+  text-align: left;
+  color: #151B28;
+  margin-top: 76px;
+  text-align: left;
+  letter-spacing: 1px;
+  margin-bottom: 63px; }
+
+.wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+
+.wrapper--second {
+  align-items: start; }
+
+button {
+  outline: none; }
+
+.logo {
+  width: 50%; }
+
+.logo-icon {
+  width: 63px;
+  height: 52px; }
+
+.nav {
+  width: 34%;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 18px;
+  padding-right: 26px; }
+
+.nav__link {
+  text-decoration: none;
+  font-family: "Lato";
+  color: #1A212F;
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 1.9rem;
+  text-align: left;
+  font-weight: 600; }
+
+.catalog {
+  width: 73%;
+  display: flex;
+  flex-wrap: wrap; }
+
+.catalog-item {
+  min-width: 270px;
+  background: #FFFFFF;
+  border: 1px solid #E1E1E1;
+  box-sizing: border-box;
+  box-shadow: 0px 0px 25px rgba(208, 208, 208, 0.25);
+  border-radius: 6px;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 30px; }
+
+.catalog-item:nth-child(2), .catalog-item:nth-child(5) {
+  margin-left: 30px;
+  margin-right: 30px; }
+
+.catalog-item__title {
+  font-family: "Rubik";
+  color: #1A212F;
+  font-size: 2rem;
+  font-weight: 600;
+  line-height: 2.2rem;
+  text-align: left;
+  padding-left: 22px;
+  margin-top: 18px;
+  text-align: left;
+  margin-bottom: 0; }
+
+.catalog-item__info {
+  font-family: "Lato";
+  color: #1A212F;
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 1.7rem;
+  text-align: left;
+  text-align: left;
+  padding-left: 20px; }
+
+.catalog-item__button {
+  background: #FF7236;
+  border-radius: 25px;
+  font-family: "Lato";
+  color: #1A212F;
+  font-size: 1.2rem;
+  font-weight: 400;
+  line-height: 1.5rem;
+  text-align: left;
+  margin: 20px;
+  margin-bottom: 30px;
+  padding: 14px 0px;
+  display: block;
+  text-align: center;
+  border: none;
+  color: #FFFEFD;
+  outline: none;
+  position: relative; }
+
+.catalog-item__button:hover {
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); }
+
+.catalog-item__button:focus {
+  background: #F05B1B;
+  box-shadow: none; }
+
+.catalog-item__button:focus > .catalog-item__button-elem {
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); }
+
+.catalog-item__price {
+  font-family: "Lato";
+  color: #1A212F;
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 1.7rem;
+  text-align: left;
+  padding-left: 20px; }
+
+.catalog-item__img img {
+  border-radius: 6px 6px 0px 0px;
+  align-self: center; }
+
+.catalog-item__button-elem {
+  width: 34px;
+  height: 33.45px;
+  background: #FFFEFD;
+  position: absolute;
+  border-radius: 50%;
+  right: 5px;
+  top: 5px; }
+
+.catalog-item__button-elem::after {
+  content: " ";
+  position: absolute;
+  width: 19.83px;
+  height: 16.73px;
+  background: url(../img/foot.svg) no-repeat;
+  background-position: center;
+  left: 8px;
+  top: 8px; }
+
+.catalog-item__info-img {
+  padding: 0 4px; }
+
+.filter {
+  width: 14%;
+  font-family: "Lato";
+  color: #1A212F;
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 1.9rem;
+  text-align: left;
+  min-width: 185px; }
+
+.filter-item {
+  margin-bottom: 33px; }
+
+.filter-item__title {
+  margin-bottom: 15px; }
+
+.filler-item__list {
+  display: flex;
+  justify-content: space-between; }
+
+.filler-item__list input {
+  width: 100px;
+  height: 24px;
+  border: 1px solid #E1E1E1;
+  box-sizing: border-box;
+  font-family: "Lato";
+  color: #1A212F;
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 1.7rem;
+  text-align: left;
+  padding-left: 23px;
+  margin-right: 10px;
+  margin-left: -17px; }
+
+.filler-item__list label {
+  position: relative;
+  left: 4px;
+  top: 4px; }
+
+.filter-item__title {
+  width: 100%; }
+
+.filter-item--area .filler-item__list {
+  width: 100%;
+  flex-wrap: wrap; }
+
+.filler-item__container {
+  display: flex;
+  width: 100%;
+  margin-bottom: 18px;
+  font-family: "Lato";
+  color: #1A212F;
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 1.7rem;
+  text-align: left; }
+
+.filter-item--area input {
+  width: 20px;
+  height: 20px;
+  border: 1px solid #E1E1E1;
+  box-sizing: border-box;
+  margin-left: 0px; }
+
+.filler-item__container input[type="checkbox"] {
+  display: none; }
+
+.filler-item__container label {
+  left: 30px; }
+
+.filler-item__container label::before {
+  content: " ";
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  border: 1px solid #E1E1E1;
+  box-sizing: border-box;
+  left: -30px;
+  top: -2px;
+  letter-spacing: 1px; }
+
+input[type="checkbox"]:checked + label::after {
+  content: "";
+  position: absolute;
+  background: url(../img/arrow.svg) no-repeat;
+  width: 9px;
+  height: 8px;
+  left: -25px;
+  top: 4px;
+  background-position: 0px 0px; }
+
+.filter-item--facilities .filler-item__list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 13px; }
+
+.filter-item--area {
+  margin-bottom: 22px; }
+
+.filter__btn {
+  width: 185px;
+  height: 42px;
+  background: #FAC663;
+  border: 2px solid #FAC663;
+  box-sizing: border-box;
+  border-radius: 25px; }
+
+.filter__btn--white {
+  margin-top: 11px;
+  background: #FFFFFF;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); }
+
+.sort-form {
+  font-family: "Lato";
+  color: #1A212F;
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 1.7rem;
+  text-align: left;
+  min-width: 174px;
+  height: 35px; }
+
+.sort-form select:focus {
+  box-shadow: 0px 2px 12px rgba(173, 152, 143, 0.18); }
+
+.sort-form__select {
+  min-width: 174px;
+  background: #FFFFFF;
+  border-radius: 4px;
+  height: 35px;
+  padding-left: 30px;
+  outline: none;
+  position: relative; }
+
+.sort-form__select {
+  background: url(../img/sort-trigger--start.svg) no-repeat right;
+  -webkit-appearance: none;
+  background-position: 143px 12px; }
+
+.sort-form__select:focus {
+  background: url(../img/sort-trigger.svg) no-repeat right;
+  background-position: 143px 12px; }
+
+.sort-form__select:blur {
+  background: url(../img/sort-trigger--start.svg) no-repeat right;
+  -webkit-appearance: none;
+  background-position: 143px 12px; }
+
+/*# sourceMappingURL=style.css.map */

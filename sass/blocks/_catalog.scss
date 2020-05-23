@@ -1,0 +1,18 @@
+.catalog{
+    width: 73%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+@media(max-width: 800px) {
+    .catalog{        
+        width: 100%;
+    }   
+}
+@media(max-width: 599px) {
+    .catalog{
+        margin-top: 20px;
+        justify-content: space-around;        
+    }    
+}

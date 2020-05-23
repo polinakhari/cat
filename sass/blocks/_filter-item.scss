@@ -1,0 +1,112 @@
+.filter-item{
+    margin-bottom: 31px;
+}
+.filter-item__title {
+    margin-bottom: 15px;
+}
+.filler-item__list{
+    display: flex;
+    justify-content: space-between;    
+}
+.filler-item__list input{
+    width: 98px;
+    height: 24px;
+    border: 1px solid #E1E1E1;
+    box-sizing: border-box;
+    @include font-desc();
+    padding-left: 27px;      
+    margin-left: -17px; 
+    outline: none;     
+    box-sizing: border-box;;
+}
+.filler-item__list input:hover{
+    border: 1px solid #ffaa50;
+}
+.filler-item__list input:focus{
+    border: 1px solid #ffaa50;
+}
+.filler-item__list label{
+    position: relative;
+    left: 7px;
+    top: 3px;
+}
+.filter-item__title{
+    width: 100%;
+}
+.filter-item--area .filler-item__list{
+    width: 100%;
+    flex-wrap: wrap;
+}
+.filler-item__container{
+    display: flex;
+    width: 100%;
+    margin-bottom: 18px;  
+    @include font-desc(); 
+}
+.filter-item--area input{
+    width: 20px;
+    height: 20px;
+    border: 1px solid #E1E1E1;
+    box-sizing: border-box;
+    margin-left: 0px;
+}
+.filler-item__container input[type="checkbox"] {
+    display: none;
+}
+.filler-item__container label{
+    left: 30px;
+}
+.filler-item__container label::before{
+    content: " ";
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border: 1px solid #E1E1E1;
+    box-sizing: border-box;
+    left: -30px;
+    top: -2px;
+    letter-spacing: 1px;
+}
+.filler-item__container label:hover::before{
+    border: 2px solid #ffaa50;
+}
+.filter-item--facilities .filler-item__list{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 13px;
+}
+.filter-item--area{
+    margin-bottom: 22px;
+}
+.filter-item--price .filler-item__list{
+    display: block;
+}
+.filter-item__price-min, .filter-item__price-max{
+    display: inline-block;
+}
+.filter-item--price label{
+    display: inline-block;
+    top: 0px;
+    left: 9px;
+}
+@media(max-width: 800px) {   
+    .filter-item{
+        width: 100%;
+    }
+    .filter-item--price{
+        width: 50%;
+    }
+    .filler-item__container{
+        width: 50%;
+    }  
+    
+}
+@media(max-width: 500px) {
+    .sort-form__select--mobile{
+        width: 100%;
+    }
+    .filter-item--price{
+        width: 100%;
+        margin-top: 20px;
+    }
+}
