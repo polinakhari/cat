@@ -30,7 +30,20 @@ function templateCatalog({img,name,size,area,price,facilities}) {
     return (
         `<div class="catalog-item">
                     <div class="catalog-item__img">
-                        <img src="img/${img}" width="270" height="182" alt="${name}">
+                        <picture> 
+                            <source 
+                            type="image/webp"                            
+                            srcset="img/${img}@2x.webp 2x,
+                            img/${img}.webp 1x">
+
+                            <source
+                            type="image/jpeg"                           
+                            srcset="img/${img}@2x.jpg 2x,
+                            img/${img}.jpg 1x"> 
+                            <source 
+                           
+                            <img  width="270" height="182" src="img/${img}.jpg" srcset="img/${img}.jpg 1x, img/${img}@2x.jpg 2x" alt="${name}">
+                        </picture>  
                     </div>
                     <p class="catalog-item__title">${name}</p>
                     <div class="catalog-item__info">
@@ -42,7 +55,7 @@ function templateCatalog({img,name,size,area,price,facilities}) {
                     </div>
                     </div> 
                     <div class="catalog-item__price">Цена за сутки:  <span>${price}</span><span class="rub">₽</span></div>                
-                    <button class="catalog-item__button">Забронировать<div class="catalog-item__button-elem"></div></button>
+                    <a class="catalog-item__button">Забронировать<div class="catalog-item__button-elem"></div></a>
                 </div>`
     )
 }

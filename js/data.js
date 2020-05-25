@@ -2,7 +2,7 @@ const data = {
     "rooms" : [
         {
             "name" : "Эконом",
-            "img" : "1.webp",
+            "img" : "1",
             "size" : "90х70х180 см",
             "area" : "0.63",
             "facilities" : ["empty"],
@@ -10,7 +10,7 @@ const data = {
         }, 
         {
             "name" : "Эконом плюс",
-            "img" : "2.webp",
+            "img" : "2",
             "size" : "90х100х180 см",
             "area" : "0.90",
             "facilities" : ["sofa", "claw"],
@@ -18,7 +18,7 @@ const data = {
         },
         {
             "name" : "Комфорт",
-            "img" : "3.webp",
+            "img" : "3",
             "size" : "100х125х180 см",
             "area" : "1.13",
             "facilities" : ["sofa", "claw","complex"],
@@ -26,7 +26,7 @@ const data = {
         },
         {
             "name" : "Сьют",
-            "img" : "4.webp",
+            "img" : "4",
             "size" : "125х125х180 см",
             "area" : "1.56",
             "facilities" : ["sofa", "claw","complex"],
@@ -34,7 +34,7 @@ const data = {
         },
         {
             "name" : "Люкс",
-            "img" : "5.webp",
+            "img" : "5",
             "size" : "160х160х180 см",
             "area" : "2.56",
             "facilities" : ["sofa", "claw","complex", "home"],
@@ -42,7 +42,7 @@ const data = {
         },
         {
             "name" : "Супер-Люкс",
-            "img" : "6.webp",
+            "img" : "6",
             "size" : "180х160х180 см",
             "area" : "2.88",
             "facilities" : ["sofa", "claw","complex", "home"],

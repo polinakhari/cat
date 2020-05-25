@@ -70,7 +70,7 @@
     return del("build");
    });
 
-  gulp.task("build", gulp.series("clean", "copy", "images", "webp", "style"));
+  gulp.task("build", gulp.series("clean", "copy", "webp", "images", "style"));
   gulp.task("start", gulp.series("build", "server"));
 
 
