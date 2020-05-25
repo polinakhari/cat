@@ -40,8 +40,7 @@ function templateCatalog({img,name,size,area,price,facilities}) {
                             type="image/jpeg"                           
                             srcset="img/${img}@2x.jpg 2x,
                             img/${img}.jpg 1x"> 
-                            <source 
-                           
+                                                       
                             <img  width="270" height="182" src="img/${img}.jpg" srcset="img/${img}.jpg 1x, img/${img}@2x.jpg 2x" alt="${name}">
                         </picture>  
                     </div>
