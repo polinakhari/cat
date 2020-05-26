@@ -79,8 +79,11 @@ function sort() {
 
 function filter(rooms){     
     const form = document.forms.filters;
-    const minPrice = form.min_price.value;
-    const maxPrice = form.max_price.value;
+    const minPrice = Number.parseInt(form.min_price.value, 10)
+    const maxPrice = Number.parseInt(form.max_price.value, 10)
+
+    console.log(minPrice, maxPrice)
+    console.log(typeof(minPrice), typeof(maxPrice))
 
     const area = document.querySelector(".filter-item--area")
     const areaInputs = area.querySelectorAll("input")     
@@ -96,7 +99,7 @@ function filter(rooms){
         }
     })
     .filter(item => areaChecked.includes(item.area))
-    .filter(item => (item.price >= minPrice && item.price <= maxPrice))
+    .filter(item => (parseInt(item.price, 10) >= minPrice && parseInt(item.price, 10) <= maxPrice))
     
     sort();
 }
